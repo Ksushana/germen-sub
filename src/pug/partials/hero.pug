@@ -1,0 +1,19 @@
+.hero
+  .hero__slider
+    .swiper-container.hero__slider-container
+      .swiper-wrapper
+        .swiper-slide
+          img(src="img/bunch-1-big@1x.jpg" srcset="img/bunch-1-big@2x.jpg 2x" alt="букет")
+        .swiper-slide
+          img(src="img/bunch-1@1x.jpg" srcset="img/bunch-1@2x.jpg 2x" alt="букет")
+        .swiper-slide
+          img(src="img/bunch-1-big@1x.jpg" srcset="img/bunch-1-big@2x.jpg 2x" alt="букет")
+      .hero__slider-pagination.swiper-pagination
+      .hero__slider-button-prev.swiper-button-prev
+        +svg("slider-arrow-prev", "11", "18")
+      .hero__slider-button-next.swiper-button-next
+        +svg("slider-arrow-next", "11", "18")
+  .hero__text
+    h2.hero__title Подписка на цветы
+    .hero__intro Подписка — это еженедельная доставка цветов. Свежие авторские букеты у вас дома. Составные или монобукеты, как вам больше нравится.
+    button.hero__btn.button Подписаться

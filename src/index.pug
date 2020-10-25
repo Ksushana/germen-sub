@@ -1,0 +1,11 @@
+extends pug/layout.pug
+
+block variables
+  - let title = 'Подписка на цветы';
+
+block content
+  .container
+    include pug/partials/hero
+    include pug/partials/benefits
+    include pug/partials/subscribe
+    include pug/partials/faq

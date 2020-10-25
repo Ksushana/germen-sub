@@ -1,0 +1,81 @@
+html {
+  text-rendering: optimizeLegibility;
+  text-size-adjust: none;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  -ms-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-size: size-desktop($font-base);
+
+  @include laptop {
+    font-size: size-laptop($font-base);
+  }
+
+  @include tablet {
+    font-size: size-tablet($font-base);
+  }
+
+  @include small-tablet {
+    font-size: size-small-tablet($font-base);
+  }
+
+  @include mobile {
+    font-size: size-mobile($font-base);
+  }
+}
+
+body {
+  min-width: $width-min;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  font-family: $font-family;
+  font-weight: 400;
+  color: $color-dark-grey;
+  background-color: $color-white;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:not([href]) {
+    cursor: default;
+    pointer-events: none;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.subscribe-container {
+  display: flex;
+  flex-direction: column;
+}
+
+svg {
+  display: block;
+}

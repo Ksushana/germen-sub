@@ -1,0 +1,207 @@
+.hero {
+  display: flex;
+  margin-bottom: 80px;
+
+  @include mobile {
+    margin-bottom: size(56px);
+    flex-direction: column;
+  }
+
+
+
+  &__slider {
+    width: 50%;
+    height: size(516px);
+
+    @include laptop {
+      height: size(463px);
+    }
+
+    @include tablet {
+      height: size(370px);
+    }
+
+    @include small-tablet {
+      height: size(278px);
+    }
+
+    @include mobile {
+      width: 100%;
+      margin-bottom: size(44px);
+
+    }
+
+    .swiper-container,
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &.subscribe-page {
+
+    .swiper-container {
+      border-radius: 8px;
+
+      @include mobile {
+        border-radius: 0;
+      }
+    }
+
+    .hero__slider {
+      height: 490px;
+      width: 490px;
+
+
+      @include small-tablet {
+        height: 360px;
+        width: 360px;
+
+        .swiper-slide {
+          height: 360px;
+          width: 360px;
+
+        }
+      }
+
+      @include mobile {
+        height: size(414px);
+        width: 100%;
+
+        .swiper-slide {
+          height: size(414px);
+          width: size(414px);
+        }
+      }
+    }
+  }
+
+  &__text {
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 92px;
+    width: 420px;
+
+    @include tablet {
+      padding-left: 40px;
+      width: auto;
+      box-sizing: border-box;
+    }
+
+    @include mobile {
+      width: 100%;
+
+      padding: 0 16px;
+      justify-content: flex-start;
+    }
+  }
+
+  &__slider-pagination {
+    bottom: 35px !important;
+    position: relative;
+
+    @include mobile {
+      bottom: size(35px) !important;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: -16px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 132px;
+      z-index: -1;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+
+      @include mobile {
+        bottom: size(-16px);
+        height: size(75px);
+      }
+    }
+
+
+    .swiper-pagination-bullet {
+      width: 7px;
+      height: 7px;
+      background: $color-white;
+      opacity: .4;
+    }
+
+    .swiper-pagination-bullet-active {
+      opacity: 1;
+      width: 7px;
+      height: 7px;
+      background: $color-white;
+    }
+  }
+
+  &__title {
+    font-size: 29px;
+    line-height: 32px;
+    margin: 0 0 24px;
+
+    @include mobile {
+      font-size: size(29px);
+      line-height: size(32px);
+      margin: 0 0 size(20px);
+    }
+  }
+
+  &__intro {
+    font-size: 17px;
+    line-height: 26px;
+    margin-bottom: 20px;
+
+    @include mobile {
+      font-size: size(17px);
+      line-height: size(26px);
+      margin-bottom: size(30px);
+    }
+  }
+
+  &__btn {
+    width: 174px;
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  top: 50%;
+  width: 42px;
+  height: 42px;
+  margin-top: -21px;
+  background-image: none;
+  background: rgba(41, 41, 41, 0.25);
+  border-radius: 50%;
+
+  svg {
+    position: absolute;
+    top: 12px;
+  }
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.swiper-button-next {
+  svg {
+    right: 14px;
+  }
+
+}
+
+.swiper-button-prev {
+  svg {
+    left: 14px;
+  }
+}

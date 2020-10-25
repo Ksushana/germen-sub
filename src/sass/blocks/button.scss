@@ -1,0 +1,17 @@
+.button {
+  @include button-reset-style;
+  font-size: 17px;
+  line-height: 22px;
+  color: $color-white;
+  border-radius: 8px;
+  background-color: $color-black-btn;
+  padding: 17px 33px;
+  text-align: center;
+
+  @include mobile {
+    font-size: size(17px);
+    line-height: size(22px);
+    border-radius: size(8px);
+    padding: size(17px) size(33px);
+  }
+}

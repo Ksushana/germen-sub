@@ -1,0 +1,43 @@
+.subscribe
+  .subscribe__tabs.js-tabs( id="tabs")
+    .subscribe__header.js-tabs__header
+      li.subscribe__list-item
+        a.subscribe__link.js-tabs__title(href="") Монобукеты
+      li.subscribe__list-item
+        a.subscribe__link.js-tabs__title(href="") Составные букеты
+    .subscribe__content.js-tabs__content
+      p.subscribe__text 1 -Букеты из цветов одного вида и, часто, одного цвета. В качестве базового цветка могут быть использованы пионовидные розы, гвоздики, георгины, тюльпаны, анемоны — любые цветы, которые любите вы или ваши близкие.
+      .subscribe__slider
+        .swiper-container.subscribe__slider-container.subscribe__mono-container
+          .swiper-wrapper
+            .swiper-slide
+              img(src="img/bunch-1@1x.jpg" srcset="img/bunch-1@2x.jpg 2x" alt="букет")
+            .swiper-slide
+              img(src="img/bunch-2@1x.jpg" srcset="img/bunch-2@2x.jpg 2x" alt="букет")
+            .swiper-slide
+              img(src="img/bunch-3@1x.jpg" srcset="img/bunch-3@2x.jpg 2x" alt="букет")
+            .swiper-slide
+              img(src="img/bunch-4@1x.jpg" srcset="img/bunch-4@2x.jpg 2x" alt="букет")
+          .subscribe__slider-button-prev.swiper-button-prev
+            +svg("slider-arrow-prev", "11", "18")
+          .subscribe__slider-button-next.swiper-button-next
+            +svg("slider-arrow-next", "11", "18")
+    .subscribe__content.js-tabs__content
+      p.subscribe__text 2 -Букеты из цветов одного вида и, часто, одного цвета. В качестве базового цветка могут быть использованы пионовидные розы, гвоздики, георгины, тюльпаны, анемоны — любые цветы, которые любите вы или ваши близкие.
+      .subscribe__slider
+        .swiper-container.subscribe__slider-container.subscribe__compose-container
+          .swiper-wrapper
+            .swiper-slide
+              img(src="img/bunch-1@1x.jpg" srcset="img/bunch-1@2x.jpg 2x" alt="букет")
+            .swiper-slide
+              img(src="img/bunch-2@1x.jpg" srcset="img/bunch-2@2x.jpg 2x" alt="букет")
+            .swiper-slide
+              img(src="img/bunch-3@1x.jpg" srcset="img/bunch-3@2x.jpg 2x" alt="букет")
+            .swiper-slide
+              img(src="img/bunch-4@1x.jpg" srcset="img/bunch-4@2x.jpg 2x" alt="букет")
+          .subscribe__slider-button-prev.swiper-button-prev
+            +svg("slider-arrow-prev", "11", "18")
+          .subscribe__slider-button-next.swiper-button-next
+            +svg("slider-arrow-next", "11", "18")
+  p.subscribe__note Заранее букеты неизвестны, потому что собираются утром в день перед доставкой
+  button.button.subscribe__btn Оформить подписку

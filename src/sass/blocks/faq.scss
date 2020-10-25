@@ -1,0 +1,108 @@
+.faq {
+  display: flex;
+  flex-direction: column;
+  background-color: $color-light-grey;
+  padding: 70px 20px 80px;
+  box-sizing: border-box;
+
+  @include mobile {
+    padding: size(52px) size(16px) size(88px);
+  }
+
+
+  &__title {
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 700;
+
+    @include mobile {
+      font-size: size(20px);
+      line-height: size(22px);
+    }
+  }
+
+  &__accord {
+    width: 864px;
+    max-width: unset;
+    margin: 24px auto 0;
+    background-color: $color-white;
+    padding: 0 32px;
+    border-radius: 8px;
+
+    @include tablet {
+      width: 600px;
+    }
+
+    @include mobile {
+      margin: size(40px) auto 0;
+      padding: 0 size(16px);
+      width: 100%;
+      box-sizing: border-box;
+      border-radius: size(8px);
+    }
+  }
+
+  &__btn {
+    @include button-reset-style;
+    background-color: transparent;
+    border-top: 1px solid #E8EBED;
+    padding: 24px 0;
+    font-size: 17px;
+    line-height: 22px;
+    text-align: left;
+    position: relative;
+
+    @include mobile {
+      font-size: size(17px);
+      line-height: size(22px);
+      padding: size(24px) 0;
+      width: 100%;
+    }
+
+    &:first-of-type {
+     box-shadow: none;
+     border-top: none;
+    }
+
+    svg {
+      position: absolute;
+      right: 0;
+      top: 24px;
+      transition: transform 0.2s;
+
+      @include mobile {
+        top: size(24px);
+        width: size(18px);
+        height: size(22px);
+      }
+    }
+
+    &.rotate {
+      svg {
+        transform: rotate(45deg);
+      }
+    }
+  }
+
+  &__answer {
+    border: none;
+    font-size: 14px;
+    line-height: 22px;
+    padding-right: 30px;
+
+    @include mobile {
+      font-size: size(14px);
+      line-height: size(22px);
+      padding-right: size(30px);
+    }
+
+    span {
+      display: block;
+      margin-bottom: 24px;
+      @include mobile {
+        margin-bottom: size(24px);
+      }
+    }
+  }
+}

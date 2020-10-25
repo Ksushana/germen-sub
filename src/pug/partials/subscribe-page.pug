@@ -1,0 +1,81 @@
+.subscribe-page.hero
+  .hero__slider
+    .swiper-container.hero__slider-container
+      .swiper-wrapper
+        .swiper-slide
+          img(src="img/bunch-4@1x.jpg" srcset="img/bunch-4@2x.jpg 2x" alt="букет")
+        .swiper-slide
+          img(src="img/bunch-1@1x.jpg" srcset="img/bunch-1@2x.jpg 2x" alt="букет")
+        .swiper-slide
+          img(src="img/bunch-2@1x.jpg" srcset="img/bunch-2@2x.jpg 2x" alt="букет")
+      .hero__slider-pagination.swiper-pagination
+      .hero__slider-button-prev.swiper-button-prev
+        +svg("slider-arrow-prev", "11", "18")
+      .hero__slider-button-next.swiper-button-next
+        +svg("slider-arrow-next", "11", "18")
+
+  .subscribe-page__form-block
+    .subscribe-page__title Подписка на цветы
+    .subscribe-page__text Подписка — это еженедельная доставка цветов. Свежие авторские букеты у вас дома. Составные или монобукеты, как вам больше нравится.
+    .subscribe-page__form
+      form(action="")
+        fieldset
+          legend Выберите букеты
+          input(type="radio" id="mono" name="type" )
+          label( for="mono" )
+            img(src="img/bunch-mono@1x.jpg" srcset="img/bunch-mono@2x.jpg 2x", alt="")
+            h3 Монобукеты
+          input(type="radio" id="compose" name="type" )
+          label( for="compose" )
+            img(src="img/bunch-compose@1x.jpg" srcset="img/bunch-compose@2x.jpg 2x", alt="")
+            h3 Монобукеты
+        fieldset
+          legend Как вам доставить цветы?
+          input(type="radio" id="delivery-1" name="delivery" )
+          label( for="delivery-1" )
+            h3 Собранный букет
+            span Это дешевле на 40% чем покупать по одному букету
+          input(type="radio" id="delivery-2" name="delivery" )
+          label( for="delivery-2" )
+            h3 Набор
+            span Это дешевле на 40% чем покупать по одному букету
+        fieldset
+          legend Какой размер?
+          input(type="radio" id="standart-size" name="size" )
+          label( for="standart-size" )
+            h3 Стандартный
+            span Это дешевле на 40% чем покупать по одному букету
+          input(type="radio" id="big-size" name="size" )
+          label( for="big-size" )
+            h3 Увеличенный
+            span Это дешевле на 40%  чем покупать по одному букету
+        fieldset
+          legend Выберите срок подписки <span>Все букеты с бесплатной доставкой.</span>
+          input(type="radio" id="1month" name="subscribe" )
+          label( for="1month" )
+            h3 1&nbsp;месяц · 12&nbsp;000&nbsp;₽
+            span 24 букета
+          input(type="radio" id="3months" name="subscribe" )
+          label.hit( for="3months" )
+            h3 3&nbsp;месяца · 33&nbsp;000&nbsp;₽
+            span 12 букетов
+          input(type="radio" id="6months" name="subscribe" )
+          label( for="6months" )
+            h3 6&nbsp;месяцев · 60&nbsp;000&nbsp;₽
+            span 24 букетов
+
+        button.button.subscribe-page__btn Заказать
+        .subscribe-page__present
+          h3 Подарить подписку
+          p Вы можете подарить подписку: мы уточним удобный адрес и время, не раскрывая сюрприз. Получатель будет наслаждаться свежими букетами каждую неделю.
+  .subscribe-page__labels
+    .subscribe-page__labels-list
+      .subscribe-page__labels-item
+        +svg("parcel", "29", "27")
+        span Быстрая, бесконтактная доставка
+      .subscribe-page__labels-item
+        +svg("delivery", "34", "28")
+        span Бесплатная доставка в пределах МКАД
+      .subscribe-page__labels-item
+        +svg("discount-black", "30", "30")
+        span Дешевле на 40% чем покупать по одному букету
