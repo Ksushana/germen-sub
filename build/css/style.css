@@ -2157,7 +2157,7 @@ svg {
   content: '';
   width: 50px;
   height: 50px;
-  background-image: url(./../../img/hit.svg);
+  background-image: url(./../img/hit.svg);
   top: -25px;
   right: 8px;
   background-size: 110%;
