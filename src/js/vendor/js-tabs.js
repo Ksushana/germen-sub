@@ -1,5 +1,131 @@
 /**
- * Vanilla JavaScript Tabs v1.0.0
- * https://zoltantothcom.github.io/vanilla-js-tabs
+ * @fileOverview
+ * @author Zoltan Toth
+ * @version 1.0.0
  */
-var Tabs=function(e){var n=document.getElementById(e.elem),a=e.open||0,r="js-tabs__title",c="js-tabs__title-active",l="js-tabs__content",o=n.querySelectorAll("."+r).length;function t(e){n.addEventListener("click",i);for(var t=u(null==e?a:e),l=0;l<o;l++)n.querySelectorAll("."+r)[l].setAttribute("data-index",l),l===t&&f(l)}function i(e){-1!==e.target.className.indexOf(r)&&(e.preventDefault(),f(e.target.getAttribute("data-index")))}function s(){[].forEach.call(n.querySelectorAll("."+l),function(e){e.style.display="none"}),[].forEach.call(n.querySelectorAll("."+r),function(e){var t,l;e.className=(t=e.className,l=new RegExp("( )"+c+"()","g"),t.replace(l,""))})}function u(e){return e<0||isNaN(e)||o<e?0:e}function f(e){s();var t=u(e);n.querySelectorAll("."+r)[t].className+=" "+c,n.querySelectorAll("."+l)[t].style.display=""}function d(){n.removeEventListener("click",i)}return t(),{open:f,update:function(e){d(),s(),t(e)},destroy:d}};
+
+/**
+ * @description
+ * Vanilla Javascript Tabs
+ *
+ * @class
+ * @param {string} options.elem - HTML id of the tabs container
+ * @param {number} [options.open = 0] - Render the tabs with this item open
+ */
+var Tabs = function(options) {
+  var elem         = document.getElementById(options.elem),
+      open         = options.open || 0,
+      titleClass   = 'js-tabs__title',
+      activeClass  = 'js-tabs__title-active',
+      contentClass = 'js-tabs__content',
+      tabsNum      = elem.querySelectorAll('.' + titleClass).length;
+
+  render();
+
+  /**
+   * Initial rendering of the tabs.
+   */
+  function render(n) {
+      elem.addEventListener('click', onClick);
+
+      var init = (n == null) ? checkTab(open) : checkTab(n);
+
+      for (var i = 0; i < tabsNum; i++) {
+          elem.querySelectorAll('.' + titleClass)[i].setAttribute('data-index', i);
+          if (i === init) openTab(i);
+      }
+  }
+
+  /**
+   * Handle clicks on the tabs.
+   *
+   * @param {object} e - Element the click occured on.
+   */
+  function onClick(e) {
+      if (e.target.className.indexOf(titleClass) === -1) return;
+      e.preventDefault();
+      openTab(e.target.getAttribute('data-index'));
+  }
+
+  /**
+   * Hide all tabs and re-set tab titles.
+   */
+  function reset() {
+      [].forEach.call(elem.querySelectorAll('.' + contentClass), function(item) {
+          item.style.display = 'none';
+          item.style.opacity = '0';
+
+      });
+
+      [].forEach.call(elem.querySelectorAll('.' + titleClass), function(item) {
+          item.className = removeClass(item.className, activeClass);
+      });
+  }
+
+  /**
+   * Utility function to remove the open class from tab titles.
+   *
+   * @param {string} str - Current class.
+   * @param {string} cls - The class to remove.
+   */
+  function removeClass(str, cls) {
+      var reg = new RegExp('(\ )' + cls + '(\)', 'g');
+      return str.replace(reg, '');
+  }
+
+  /**
+   * Utility function to remove the open class from tab titles.
+   *
+   * @param n - Tab to open.
+   */
+  function checkTab(n) {
+      return (n < 0 || isNaN(n) || n > tabsNum) ? 0 : n;
+  }
+
+  /**
+   * Opens a tab by index.
+   *
+   * @param {number} n - Index of tab to open. Starts at 0.
+   *
+   * @public
+   */
+  function openTab(n) {
+      reset();
+
+      var i = checkTab(n);
+
+      elem.querySelectorAll('.' + titleClass)[i].className += ' ' + activeClass;
+      elem.querySelectorAll('.' + contentClass)[i].style.display = '';
+      setTimeout(function(){
+        elem.querySelectorAll('.' + contentClass)[i].style.opacity = "1"; }, 50);
+
+  }
+
+  /**
+   * Updates the tabs.
+   *
+   * @param {number} n - Index of tab to open. Starts at 0.
+   *
+   * @public
+   */
+  function update(n) {
+      destroy();
+      reset();
+      render(n);
+  }
+
+  /**
+   * Removes the listeners from the tabs.
+   *
+   * @public
+   */
+  function destroy() {
+      elem.removeEventListener('click', onClick);
+  }
+
+  return {
+      open: openTab,
+      update: update,
+      destroy: destroy
+  };
+};

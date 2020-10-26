@@ -1495,8 +1495,16 @@ svg {
   }
 }
 
+.swiper-button-next {
+  right: 18px;
+}
+
 .swiper-button-next svg {
   right: 14px;
+}
+
+.swiper-button-prev {
+  left: 18px;
 }
 
 .swiper-button-prev svg {
@@ -1527,7 +1535,7 @@ svg {
 }
 
 .button:hover {
-  background-color: #000000;
+  background-color: #191E29;
 }
 
 @media (max-width: 767px) {
@@ -1685,6 +1693,8 @@ svg {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
 }
 
 .subscribe__tabs {
@@ -1973,6 +1983,20 @@ svg {
   }
 }
 
+.subscribe-page__sticky {
+  position: sticky;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  top: 68px;
+}
+
+@media (max-width: 767px) {
+  .subscribe-page__sticky {
+    position: static;
+  }
+}
+
 .subscribe-page__form-block {
   padding-left: 82px;
   width: 50%;
@@ -2093,6 +2117,7 @@ svg {
   margin-bottom: 14px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  cursor: pointer;
 }
 
 @media (max-width: 1023px) {
@@ -2154,6 +2179,8 @@ svg {
 
 .subscribe-page fieldset input:checked + label {
   border: 1px solid #000000;
+  -webkit-box-shadow: inset 0px 0px 0px 1px #000000;
+  box-shadow: inset 0px 0px 0px 1px #000000;
 }
 
 .subscribe-page fieldset label.hit {
@@ -2249,11 +2276,12 @@ svg {
 }
 
 .subscribe-page__labels {
-  margin-top: 37px;
-  position: absolute;
   width: 490px;
-  left: 0;
-  top: 490px;
+  margin-top: 35px;
+}
+
+.subscribe-page__labels--mob {
+  display: none;
 }
 
 @media (max-width: 1279px) {
@@ -2269,6 +2297,12 @@ svg {
     margin-top: 2.17647rem;
     margin-bottom: 1.17647rem;
     width: 100%;
+  }
+  .subscribe-page__labels--mob {
+    display: block;
+  }
+  .subscribe-page__labels--desktop {
+    display: none;
   }
 }
 

@@ -10,8 +10,8 @@
 
   var accordion = new Accordion({
     element: 'accordion',
-    openTab: 1,
-    oneOpen: true
+    openTab: false,
+    oneOpen: false
   });
 
   var btns = document.querySelectorAll('.faq__btn')

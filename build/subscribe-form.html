@@ -16,20 +16,35 @@
   <main>
     <div class="container subscribe-container">
       <div class="subscribe-page hero">
-        <div class="hero__slider">
-          <div class="swiper-container hero__slider-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="img/bunch-4@1x.jpg" srcset="img/bunch-4@2x.jpg 2x" alt="букет"></div>
-              <div class="swiper-slide"><img src="img/bunch-1@1x.jpg" srcset="img/bunch-1@2x.jpg 2x" alt="букет"></div>
-              <div class="swiper-slide"><img src="img/bunch-2@1x.jpg" srcset="img/bunch-2@2x.jpg 2x" alt="букет"></div>
+        <div class="subscribe-page__sticky">
+          <div class="hero__slider">
+            <div class="swiper-container hero__slider-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/bunch-4@1x.jpg" srcset="img/bunch-4@2x.jpg 2x" alt="букет"></div>
+                <div class="swiper-slide"><img src="img/bunch-1@1x.jpg" srcset="img/bunch-1@2x.jpg 2x" alt="букет"></div>
+                <div class="swiper-slide"><img src="img/bunch-2@1x.jpg" srcset="img/bunch-2@2x.jpg 2x" alt="букет"></div>
+              </div>
+              <div class="hero__slider-pagination swiper-pagination"></div>
+              <div class="hero__slider-button-prev swiper-button-prev"><svg width="11" height="18" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#slider-arrow-prev"></use>
+                </svg></div>
+              <div class="hero__slider-button-next swiper-button-next"><svg width="11" height="18" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#slider-arrow-next"></use>
+                </svg></div>
             </div>
-            <div class="hero__slider-pagination swiper-pagination"></div>
-            <div class="hero__slider-button-prev swiper-button-prev"><svg width="11" height="18" aria-hidden="true">
-                <use xlink:href="img/sprite.svg#slider-arrow-prev"></use>
-              </svg></div>
-            <div class="hero__slider-button-next swiper-button-next"><svg width="11" height="18" aria-hidden="true">
-                <use xlink:href="img/sprite.svg#slider-arrow-next"></use>
-              </svg></div>
+          </div>
+          <div class="subscribe-page__labels subscribe-page__labels--desktop">
+            <div class="subscribe-page__labels-list">
+              <div class="subscribe-page__labels-item"><svg width="29" height="27" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#parcel"></use>
+                </svg><span>Быстрая, бесконтактная доставка</span></div>
+              <div class="subscribe-page__labels-item"><svg width="34" height="28" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#delivery"></use>
+                </svg><span>Бесплатная доставка в пределах МКАД</span></div>
+              <div class="subscribe-page__labels-item"><svg width="30" height="30" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#discount-black"></use>
+                </svg><span>Дешевле на 40% чем покупать по одному букету</span></div>
+            </div>
           </div>
         </div>
         <div class="subscribe-page__form-block">
@@ -74,7 +89,7 @@
             </form>
           </div>
         </div>
-        <div class="subscribe-page__labels">
+        <div class="subscribe-page__labels subscribe-page__labels--mob">
           <div class="subscribe-page__labels-list">
             <div class="subscribe-page__labels-item"><svg width="29" height="27" aria-hidden="true">
                 <use xlink:href="img/sprite.svg#parcel"></use>

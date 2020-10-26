@@ -1,19 +1,30 @@
 .subscribe-page.hero
-  .hero__slider
-    .swiper-container.hero__slider-container
-      .swiper-wrapper
-        .swiper-slide
-          img(src="img/bunch-4@1x.jpg" srcset="img/bunch-4@2x.jpg 2x" alt="букет")
-        .swiper-slide
-          img(src="img/bunch-1@1x.jpg" srcset="img/bunch-1@2x.jpg 2x" alt="букет")
-        .swiper-slide
-          img(src="img/bunch-2@1x.jpg" srcset="img/bunch-2@2x.jpg 2x" alt="букет")
-      .hero__slider-pagination.swiper-pagination
-      .hero__slider-button-prev.swiper-button-prev
-        +svg("slider-arrow-prev", "11", "18")
-      .hero__slider-button-next.swiper-button-next
-        +svg("slider-arrow-next", "11", "18")
-
+  .subscribe-page__sticky
+    .hero__slider
+      .swiper-container.hero__slider-container
+        .swiper-wrapper
+          .swiper-slide
+            img(src="img/bunch-4@1x.jpg" srcset="img/bunch-4@2x.jpg 2x" alt="букет")
+          .swiper-slide
+            img(src="img/bunch-1@1x.jpg" srcset="img/bunch-1@2x.jpg 2x" alt="букет")
+          .swiper-slide
+            img(src="img/bunch-2@1x.jpg" srcset="img/bunch-2@2x.jpg 2x" alt="букет")
+        .hero__slider-pagination.swiper-pagination
+        .hero__slider-button-prev.swiper-button-prev
+          +svg("slider-arrow-prev", "11", "18")
+        .hero__slider-button-next.swiper-button-next
+          +svg("slider-arrow-next", "11", "18")
+    .subscribe-page__labels.subscribe-page__labels--desktop
+      .subscribe-page__labels-list
+        .subscribe-page__labels-item
+          +svg("parcel", "29", "27")
+          span Быстрая, бесконтактная доставка
+        .subscribe-page__labels-item
+          +svg("delivery", "34", "28")
+          span Бесплатная доставка в пределах МКАД
+        .subscribe-page__labels-item
+          +svg("discount-black", "30", "30")
+          span Дешевле на 40% чем покупать по одному букету
   .subscribe-page__form-block
     .subscribe-page__title Подписка на цветы
     .subscribe-page__text Подписка — это еженедельная доставка цветов. Свежие авторские букеты у вас дома. Составные или монобукеты, как вам больше нравится.
@@ -68,7 +79,7 @@
         .subscribe-page__present
           h3 Подарить подписку
           p Вы можете подарить подписку: мы уточним удобный адрес и время, не раскрывая сюрприз. Получатель будет наслаждаться свежими букетами каждую неделю.
-  .subscribe-page__labels
+  .subscribe-page__labels.subscribe-page__labels--mob
     .subscribe-page__labels-list
       .subscribe-page__labels-item
         +svg("parcel", "29", "27")

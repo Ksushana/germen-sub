@@ -10,6 +10,7 @@
   &__content {
     display: flex;
     flex-direction: column;
+    transition: opacity 0.4s;
   }
 
   &__tabs {

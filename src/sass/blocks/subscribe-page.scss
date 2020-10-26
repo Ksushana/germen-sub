@@ -12,6 +12,16 @@
     margin: 0;
   }
 
+  &__sticky {
+    position: sticky;
+    height: fit-content;
+    top: 68px;
+
+    @include mobile {
+      position: static;
+    }
+  }
+
   &__form-block {
     padding-left: 82px;
     width: 50%;
@@ -103,6 +113,7 @@
       justify-content: center;
       margin-bottom: 14px;
       transition: all 0.3s;
+      cursor: pointer;
 
       @include small-tablet {
         width: 49%;
@@ -155,6 +166,9 @@
 
     input:checked + label {
       border: 1px solid #000000;
+      -webkit-box-shadow: inset 0px 0px 0px 1px #000000;
+      -moz-box-shadow: inset 0px 0px 0px 1px #000000;
+      box-shadow: inset 0px 0px 0px 1px #000000;
     }
 
     label.hit {
@@ -243,11 +257,12 @@
   }
 
   &__labels {
-    margin-top: 37px;
-    position: absolute;
     width: 490px;
-    left: 0;
-    top: 490px;
+    margin-top: 35px;
+
+    &--mob {
+      display: none;
+    }
 
     @include tablet {
       top: 360px;
@@ -255,10 +270,19 @@
     }
 
     @include mobile {
+
       position: static;
       margin-top: size(37px);
       margin-bottom: size(20px);
       width: 100%;
+
+      &--mob {
+        display: block;
+      }
+
+      &--desktop {
+        display: none;
+      }
 
     }
   }
