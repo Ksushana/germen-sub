@@ -7,6 +7,11 @@
   background-color: $color-black-btn;
   padding: 17px 33px;
   text-align: center;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: $color-black;
+  }
 
   @include mobile {
     font-size: size(17px);

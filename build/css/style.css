@@ -1479,6 +1479,7 @@ svg {
   background-image: none;
   background: rgba(41, 41, 41, 0.25);
   border-radius: 50%;
+  outline: none;
 }
 
 .swiper-button-prev svg,
@@ -1521,6 +1522,12 @@ svg {
   background-color: #1F2533;
   padding: 17px 33px;
   text-align: center;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #000000;
 }
 
 @media (max-width: 767px) {
@@ -2084,6 +2091,8 @@ svg {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 14px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 @media (max-width: 1023px) {
