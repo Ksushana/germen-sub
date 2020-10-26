@@ -269,7 +269,7 @@
       display: none;
     }
 
-    @include tablet {
+    @include small-tablet {
       top: 360px;
       width: 360px;
     }
