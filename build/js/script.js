@@ -85,17 +85,14 @@ var Accordion = function(options) {
       // the content was updated dynamically
       var btn = el.previousElementSibling;
       var height = el.scrollHeight;
-      var btns = document.querySelectorAll('.faq__btn')
+      // var btns = document.querySelectorAll('.faq__btn')
 
       if (el.style.height === '0px' || el.style.height === '') {
           el.style.height = height + 'px';
           btn.classList.add('rotate');
       } else {
           el.style.height = 0;
-          btns.forEach(btn => {
-            alert(1)
-            btn.classList.remove('rotate');
-          });
+
       }
   }
 
@@ -9147,7 +9144,17 @@ var Tabs=function(e){var n=document.getElementById(e.elem),a=e.open||0,r="js-tab
     oneOpen: true
   });
 
+  var btns = document.querySelectorAll('.faq__btn')
+  for ( var index = 0; index < btns.length; index++) {
+    var btn = btns[index];
+    btn.addEventListener("click", function() {
+      btns.forEach(btn => {
+        btn.classList.remove('rotate')
+      });
+    });
+  }
 })();
+
 'use strict';
 
 (function () {

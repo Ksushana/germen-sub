@@ -85,17 +85,14 @@ var Accordion = function(options) {
       // the content was updated dynamically
       var btn = el.previousElementSibling;
       var height = el.scrollHeight;
-      var btns = document.querySelectorAll('.faq__btn')
+      // var btns = document.querySelectorAll('.faq__btn')
 
       if (el.style.height === '0px' || el.style.height === '') {
           el.style.height = height + 'px';
           btn.classList.add('rotate');
       } else {
           el.style.height = 0;
-          btns.forEach(btn => {
-            alert(1)
-            btn.classList.remove('rotate');
-          });
+
       }
   }
 
