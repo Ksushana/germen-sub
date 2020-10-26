@@ -144,11 +144,13 @@
     font-size: 29px;
     line-height: 32px;
     margin: 0 0 24px;
+    font-weight: 700;
 
     @include mobile {
       font-size: size(29px);
       line-height: size(32px);
       margin: 0 0 size(20px);
+      text-align: center;
     }
   }
 

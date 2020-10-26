@@ -41,6 +41,11 @@
     font-size: 40px;
     line-height: 44px;
     margin-bottom: 20px;
+    font-weight: 700;
+
+    @include tablet {
+      font-size: 32px;
+    }
 
     @include mobile {
       font-size: size(29px);
