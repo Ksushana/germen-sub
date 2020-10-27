@@ -93,6 +93,13 @@
       line-height: 22px;
       margin-bottom: 16px;
       font-weight: 600;
+      span {
+        display: inline-block;
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: normal;
+        margin-top: 9px;
+      }
 
       @include mobile {
         font-size: size(17px);

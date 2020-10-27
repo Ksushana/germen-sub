@@ -1128,7 +1128,7 @@ button.swiper-pagination-bullet {
 
 /* General */
 @font-face {
-  font-family: "MuseoSansSlim";
+  font-family: "MuseoSans";
   font-weight: 100;
   font-style: normal;
   font-display: swap;
@@ -1136,7 +1136,7 @@ button.swiper-pagination-bullet {
 }
 
 @font-face {
-  font-family: "MuseoSansRegular";
+  font-family: "MuseoSans";
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -1144,7 +1144,7 @@ button.swiper-pagination-bullet {
 }
 
 @font-face {
-  font-family: "MuseoSansBold";
+  font-family: "MuseoSans";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -1152,7 +1152,7 @@ button.swiper-pagination-bullet {
 }
 
 @font-face {
-  font-family: "MuseoSansExtraBold";
+  font-family: "MuseoSans";
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -1553,7 +1553,7 @@ svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 96px;
+  margin-bottom: 60px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -1613,7 +1613,9 @@ svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 270px;
+  width: 300px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0 10px;
 }
 
@@ -1760,6 +1762,11 @@ svg {
   .subscribe__content {
     padding: 1.41176rem 0 1.88235rem;
   }
+}
+
+.subscribe__slider {
+  width: 87%;
+  margin: 0 auto;
 }
 
 @media (max-width: 767px) {
@@ -1925,6 +1932,7 @@ svg {
   transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
   transition: transform 0.2s, -webkit-transform 0.2s;
+  pointer-events: none;
 }
 
 @media (max-width: 767px) {
@@ -2088,6 +2096,14 @@ svg {
   line-height: 22px;
   margin-bottom: 16px;
   font-weight: 600;
+}
+
+.subscribe-page fieldset legend span {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: normal;
+  margin-top: 9px;
 }
 
 @media (max-width: 767px) {

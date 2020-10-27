@@ -70,6 +70,8 @@
   }
 
   &__slider {
+    width: 87%;
+    margin: 0 auto;
     @include mobile {
       width: 100vw;
       margin-left: size(-16px);

@@ -1,6 +1,6 @@
 .benefits {
   display: flex;
-  margin-bottom: 96px;
+  margin-bottom: 60px;
   flex-wrap: wrap;
 
   @include tablet {
@@ -35,7 +35,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 270px;
+    width: 300px;
+    box-sizing: border-box;
     padding: 0 10px;
 
     @include tablet {
