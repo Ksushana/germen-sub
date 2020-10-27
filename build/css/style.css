@@ -2104,6 +2104,7 @@ svg {
   line-height: 22px;
   font-weight: normal;
   margin-top: 9px;
+  width: 100%;
 }
 
 @media (max-width: 767px) {
@@ -2111,6 +2112,11 @@ svg {
     font-size: 1rem;
     line-height: 1.29412rem;
     margin-bottom: 0.94118rem;
+  }
+  .subscribe-page fieldset legend span {
+    font-size: 0.82353rem;
+    line-height: 1.29412rem;
+    margin-top: 0.52941rem;
   }
 }
 
