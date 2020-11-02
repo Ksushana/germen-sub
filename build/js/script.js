@@ -9289,6 +9289,20 @@ var Tabs = function(options) {
     return;
   }
 
+  var mySwiper = new Swiper('.hero__slider-container-index', {
+    slidesPerView: 1,
+    speed: 400,
+    spaceBetween: 10,
+    navigation: {
+      nextEl: '.hero__slider-button-next',
+      prevEl: '.hero__slider-button-prev',
+    },
+    pagination: {
+      el: '.hero__slider-pagination',
+      type: 'bullets',
+    },
+  });
+
   var mySwiper = new Swiper('.hero__slider-container-1', {
     slidesPerView: 1,
     speed: 400,
