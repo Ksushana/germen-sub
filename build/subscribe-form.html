@@ -18,10 +18,24 @@
       <div class="subscribe-page hero">
         <div class="subscribe-page__sticky">
           <div class="hero__slider">
-            <div class="swiper-container hero__slider-container">
+            <div class="swiper-container hero__slider-container hero__slider-container-1">
               <div class="swiper-wrapper">
                 <div class="swiper-slide"><img src="img/bunch-4@1x.jpg" srcset="img/bunch-4@2x.jpg 2x" alt="букет"></div>
                 <div class="swiper-slide"><img src="img/bunch-1@1x.jpg" srcset="img/bunch-1@2x.jpg 2x" alt="букет"></div>
+                <div class="swiper-slide"><img src="img/bunch-2@1x.jpg" srcset="img/bunch-2@2x.jpg 2x" alt="букет"></div>
+              </div>
+              <div class="hero__slider-pagination swiper-pagination"></div>
+              <div class="hero__slider-button-prev swiper-button-prev"><svg width="11" height="18" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#slider-arrow-prev"></use>
+                </svg></div>
+              <div class="hero__slider-button-next swiper-button-next"><svg width="11" height="18" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#slider-arrow-next"></use>
+                </svg></div>
+            </div>
+            <div class="swiper-container hero__slider-container hero__slider-container-2 visually-hidden">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/bunch-1@1x.jpg" srcset="img/bunch-1@2x.jpg 2x" alt="букет"></div>
+                <div class="swiper-slide"><img src="img/bunch-4@1x.jpg" srcset="img/bunch-4@2x.jpg 2x" alt="букет"></div>
                 <div class="swiper-slide"><img src="img/bunch-2@1x.jpg" srcset="img/bunch-2@2x.jpg 2x" alt="букет"></div>
               </div>
               <div class="hero__slider-pagination swiper-pagination"></div>
@@ -52,10 +66,10 @@
           <div class="subscribe-page__text">Подписка — это еженедельная доставка цветов. Свежие авторские букеты у вас дома. Составные или монобукеты, как вам больше нравится.</div>
           <div class="subscribe-page__form">
             <form action="">
-              <fieldset>
-                <legend>Выберите букеты</legend><input type="radio" id="mono" name="type"><label for="mono"><img src="img/bunch-mono@1x.jpg" srcset="img/bunch-mono@2x.jpg 2x" alt="">
+              <fieldset class="subscribe-page__form-type">
+                <legend>Выберите букеты</legend><input type="radio" id="mono" name="type" checked><label class="subscribe-page__form-type--mono" for="mono"><img src="img/bunch-mono@1x.jpg" srcset="img/bunch-mono@2x.jpg 2x" alt="">
                   <h3>Монобукеты</h3>
-                </label><input type="radio" id="compose" name="type"><label for="compose"><img src="img/bunch-compose@1x.jpg" srcset="img/bunch-compose@2x.jpg 2x" alt="">
+                </label><input type="radio" id="compose" name="type"><label class="subscribe-page__form-type--compose" for="compose"><img src="img/bunch-compose@1x.jpg" srcset="img/bunch-compose@2x.jpg 2x" alt="">
                   <h3>Монобукеты</h3>
                 </label>
               </fieldset>

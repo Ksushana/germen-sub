@@ -1,12 +1,25 @@
 .subscribe-page.hero
   .subscribe-page__sticky
     .hero__slider
-      .swiper-container.hero__slider-container
+      .swiper-container.hero__slider-container.hero__slider-container-1
         .swiper-wrapper
           .swiper-slide
             img(src="img/bunch-4@1x.jpg" srcset="img/bunch-4@2x.jpg 2x" alt="букет")
           .swiper-slide
             img(src="img/bunch-1@1x.jpg" srcset="img/bunch-1@2x.jpg 2x" alt="букет")
+          .swiper-slide
+            img(src="img/bunch-2@1x.jpg" srcset="img/bunch-2@2x.jpg 2x" alt="букет")
+        .hero__slider-pagination.swiper-pagination
+        .hero__slider-button-prev.swiper-button-prev
+          +svg("slider-arrow-prev", "11", "18")
+        .hero__slider-button-next.swiper-button-next
+          +svg("slider-arrow-next", "11", "18")
+      .swiper-container.hero__slider-container.hero__slider-container-2.visually-hidden
+        .swiper-wrapper
+          .swiper-slide
+            img(src="img/bunch-1@1x.jpg" srcset="img/bunch-1@2x.jpg 2x" alt="букет")
+          .swiper-slide
+            img(src="img/bunch-4@1x.jpg" srcset="img/bunch-4@2x.jpg 2x" alt="букет")
           .swiper-slide
             img(src="img/bunch-2@1x.jpg" srcset="img/bunch-2@2x.jpg 2x" alt="букет")
         .hero__slider-pagination.swiper-pagination
@@ -30,14 +43,14 @@
     .subscribe-page__text Подписка — это еженедельная доставка цветов. Свежие авторские букеты у вас дома. Составные или монобукеты, как вам больше нравится.
     .subscribe-page__form
       form(action="")
-        fieldset
+        fieldset.subscribe-page__form-type
           legend Выберите букеты
-          input(type="radio" id="mono" name="type" )
-          label( for="mono" )
+          input(type="radio" id="mono" name="type" checked)
+          label.subscribe-page__form-type--mono( for="mono" )
             img(src="img/bunch-mono@1x.jpg" srcset="img/bunch-mono@2x.jpg 2x", alt="")
             h3 Монобукеты
           input(type="radio" id="compose" name="type" )
-          label( for="compose" )
+          label.subscribe-page__form-type--compose( for="compose" )
             img(src="img/bunch-compose@1x.jpg" srcset="img/bunch-compose@2x.jpg 2x", alt="")
             h3 Монобукеты
         fieldset
