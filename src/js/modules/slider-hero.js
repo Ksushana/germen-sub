@@ -57,6 +57,10 @@
   var monoSlider = document.querySelector(".hero__slider-container-1");
   var composeSlider = document.querySelector(".hero__slider-container-2");
 
+  if (!composeSlider) {
+    return;
+  }
+
 
   mono.addEventListener("click", function() {
     monoSlider.classList.remove("visually-hidden");
