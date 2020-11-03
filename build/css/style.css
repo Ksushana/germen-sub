@@ -1540,6 +1540,8 @@ svg {
 
 .button:hover {
   background-color: #191E29;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 @media (max-width: 767px) {

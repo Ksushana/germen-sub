@@ -12,6 +12,8 @@
 
   &:hover {
     background-color: #191E29;
+    color: $color-white;
+    text-decoration: none;
   }
 
   @include mobile {
