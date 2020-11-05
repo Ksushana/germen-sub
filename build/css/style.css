@@ -2100,6 +2100,7 @@ svg {
   line-height: 22px;
   margin-bottom: 16px;
   font-weight: 600;
+  border: none;
 }
 
 .subscribe-page fieldset legend span {
