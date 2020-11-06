@@ -1980,7 +1980,7 @@ svg {
 
 .subscribe-page {
   width: 980px;
-  margin: 68px auto;
+  margin: 0 auto 68px;
   position: relative;
 }
 
