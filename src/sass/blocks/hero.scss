@@ -1,6 +1,7 @@
 .hero {
   display: flex;
   margin-bottom: 80px;
+  justify-content: space-between;
 
   @include mobile {
     margin-bottom: size(56px);
@@ -83,7 +84,7 @@
     flex-direction: column;
     justify-content: center;
     padding-left: 92px;
-    width: 420px;
+    width: auto;
 
     @include tablet {
       padding-left: 40px;
@@ -93,24 +94,218 @@
 
     @include mobile {
       width: 100%;
-
+      order:2;
       padding: 0 16px;
       justify-content: flex-start;
     }
   }
 
+  &__slider-container-index {
+    padding-bottom: 13px;
+  }
+
   &__slider-pagination {
-    bottom: 35px !important;
+    // bottom: 35px !important;
     position: relative;
+    bottom: -10px!important;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 4px;
+    width: auto!important;
+    padding-right: 8px;
+
+
+
+    &::before {
+      position: absolute;
+      content: "";
+      left: 0;
+      right: 0;
+      border-radius: 2px;
+      height: 3px!important;
+      z-index: 1000;
+
+      background: #000000!important;
+      // -webkit-animation: slide-right 16s linear infinite;
+	        animation: slide-right 18000ms linear infinite;
+
+      // transition: transform 5s linear;
+      // -webkit-animation: slide-right 5s linear forwards;
+      //   animation: slide-right 5s linear forwards;
+
+      @include mobile {
+        display: none;
+      }
+    }
+
+    @-webkit-keyframes slide-right {
+      0% {
+        width: 0;
+        left: 0;
+        right: auto;
+      }
+      29% {
+        left:0;
+        width: 33%;
+        right: auto;
+      }
+
+      30% {
+        width: 33%;
+        right: 67%;
+        left:auto;
+      }
+      33% {
+        width: 0;
+        left: auto;
+        right: 66.7%;
+      }
+
+      33.4% {
+        width: 0%;
+        left:33.31%;
+        right: auto;
+      }
+      61% {
+        width: 33%;
+        left:33.3%;
+        right: auto;
+      }
+      65% {
+        width: 0%;
+        left:66.3%;
+        right: auto;
+      }
+      95% {
+        width: 33%;
+        left:66.3%;
+      }
+      98% {
+        width: 0%;
+        left:99%;
+        right: auto;
+      }
+
+      99% {
+        width: 33%;
+        left:50%;
+        right: auto;
+      }
+
+      100% {
+        width: 0%;
+        left:0;
+        right: auto;
+      }
+
+    }
+
+    @keyframes slide-right {
+      0% {
+        width: 0;
+        left: 0;
+        right: auto;
+      }
+      29% {
+        left:0;
+        width: 33%;
+        right: auto;
+      }
+
+      30% {
+        width: 33%;
+        right: 67%;
+        left:auto;
+      }
+      33% {
+        width: 0;
+        left: auto;
+        right: 66.7%;
+      }
+
+      33.4% {
+        width: 0%;
+        left:33.31%;
+        right: auto;
+      }
+      61% {
+        width: 33%;
+        left:33.3%;
+        right: auto;
+      }
+      65% {
+        width: 0%;
+        left:66.3%;
+        right: auto;
+      }
+      95% {
+        width: 33%;
+        left:66.3%;
+      }
+      98% {
+        width: 0%;
+        left:99%;
+        right: auto;
+      }
+
+      99% {
+        width: 33%;
+        left:50%;
+        right: auto;
+      }
+
+      100% {
+        width: 0%;
+        left:0;
+        right: auto;
+      }
+
+
+    }
+
+    span.swiper-pagination-bullet {
+      background: #D6D6D6!important;
+      border-radius: 2px;
+      height: 3px!important;
+      width: 100%!important;
+      position: relative;
+      overflow: hidden;
+      opacity: 1;
+      margin: 0 !important;
+
+    }
+
+    span.swiper-pagination-bullet-active {
+      opacity: 1;
+    }
 
     @include mobile {
-      bottom: size(35px) !important;
+      bottom: size(24px) !important;
+      display: flex;
+      justify-content: center;
+
+        span.swiper-pagination-bullet {
+          width: size(7px) !important;
+          height: size(7px)!important;
+          background: $color-white!important;
+          opacity: .4 !important;
+          border-radius: 50%;
+        }
+
+        span.swiper-pagination-bullet-active {
+          opacity: 1!important;
+          width: size(7px)!important;
+          height: size(7px)!important;
+          background: $color-white!important;
+          border-radius: 50%;
+        }
+
     }
 
     &::after {
       position: absolute;
       content: "";
-      bottom: -16px;
+      bottom: 13px;
       left: 0;
       right: 0;
       width: 100%;
@@ -119,38 +314,65 @@
       background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
 
       @include mobile {
-        bottom: size(-16px);
+        bottom: size(-17px);
         height: size(75px);
       }
     }
 
 
-    .swiper-pagination-bullet {
-      width: 7px;
-      height: 7px;
-      background: $color-white;
-      opacity: .4;
-    }
 
-    .swiper-pagination-bullet-active {
-      opacity: 1;
-      width: 7px;
-      height: 7px;
-      background: $color-white;
-    }
   }
 
   &__title {
-    font-size: 29px;
-    line-height: 32px;
+    font-size: 57px;
+    line-height: 57px;
+    letter-spacing: -2px;
     margin: 0 0 24px;
     font-weight: 700;
+
+    @include tablet {
+      font-size: 47px;
+      line-height: 47px;
+    }
+
+    @include small-tablet {
+      font-size: 37px;
+      line-height: 37px;
+    }
+
+    span {
+      position: relative;
+      width: 100%;
+      display: inline-block;
+    }
+
+    .place {
+      transition: opacity 0.5s;
+      position: absolute;
+      left: 100px;
+
+      @include tablet {
+        left: 87px;
+      }
+
+      @include small-tablet {
+        left: 67px;
+      }
+    }
+
+    .hidden {
+      opacity : 0;
+    }
 
     @include mobile {
       font-size: size(29px);
       line-height: size(32px);
       margin: 0 0 size(20px);
       text-align: center;
+
+      .change-title {
+        display: none;
+      }
     }
   }
 

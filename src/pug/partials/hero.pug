@@ -1,19 +1,17 @@
 .hero
+
+  .hero__text
+    h2.hero__title Подписка на цветы <span class="change-title" style="color:#FF323D">для <span class="place rest">ресторана</span><span class="hidden place office">офиса</span><span class="hidden place home">дома</span></span>
+    .hero__intro Подписка — это еженедельная доставка цветов. Свежие авторские букеты у вас дома. Составные или монобукеты, как вам больше нравится.
+    a.hero__btn.button(href="#") Подписаться
+
   .hero__slider
     .swiper-container.hero__slider-container-index
       .swiper-wrapper
-        .swiper-slide
-          img(src="img/bunch-1-big@1x.jpg" srcset="img/bunch-1-big@2x.jpg 2x" alt="букет")
-        .swiper-slide
-          img(src="img/bunch-1@1x.jpg" srcset="img/bunch-1@2x.jpg 2x" alt="букет")
-        .swiper-slide
-          img(src="img/bunch-1-big@1x.jpg" srcset="img/bunch-1-big@2x.jpg 2x" alt="букет")
+        .swiper-slide.swiper-slide-resr
+          img(src="img/resr@1x.jpg" srcset="img/rest@2x.jpg 2x" alt="ресторан")
+        .swiper-slide.swiper-slide-office
+          img(src="img/office@1x.jpg" srcset="img/office@2x.jpg 2x" alt="офис")
+        .swiper-slide.swiper-slide-home
+          img(src="img/bunch-1-big@1x.jpg" srcset="img/bunch-1-big@2x.jpg 2x" alt="дом")
       .hero__slider-pagination.swiper-pagination
-      .hero__slider-button-prev.swiper-button-prev
-        +svg("slider-arrow-prev", "11", "18")
-      .hero__slider-button-next.swiper-button-next
-        +svg("slider-arrow-next", "11", "18")
-  .hero__text
-    h2.hero__title Подписка на цветы
-    .hero__intro Подписка — это еженедельная доставка цветов. Свежие авторские букеты у вас дома. Составные или монобукеты, как вам больше нравится.
-    a.hero__btn.button(href="#") Подписаться
