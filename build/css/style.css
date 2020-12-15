@@ -1264,7 +1264,7 @@ svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 80px;
+  margin-bottom: 175px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1281,7 +1281,7 @@ svg {
 }
 
 .hero__slider {
-  width: 50%;
+  width: 48%;
   height: 30.35294rem;
 }
 
@@ -1367,7 +1367,7 @@ svg {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-left: 92px;
+  padding-left: 130px;
   width: auto;
 }
 
@@ -1605,7 +1605,7 @@ svg {
   font-size: 57px;
   line-height: 57px;
   letter-spacing: -2px;
-  margin: 0 0 24px;
+  margin: 0 0 20px;
   font-weight: 700;
 }
 
@@ -1667,7 +1667,9 @@ svg {
 .hero__intro {
   font-size: 17px;
   line-height: 26px;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
+  padding-right: 130px;
+  font-weight: bold;
 }
 
 @media (max-width: 767px) {
@@ -1680,6 +1682,7 @@ svg {
 
 .hero__btn {
   width: 174px;
+  font-weight: 700;
 }
 
 @media (max-width: 767px) {
@@ -1746,12 +1749,22 @@ svg {
   color: #ffffff;
   border-radius: 8px;
   background-color: #1F2533;
-  padding: 17px 33px;
+  padding: 17px 10px 15px;
   text-align: center;
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .button:hover {
@@ -1773,7 +1786,7 @@ svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 60px;
+  margin-bottom: 150px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -1791,7 +1804,7 @@ svg {
 }
 
 .benefits__list {
-  width: 980px;
+  width: 1000px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2127,6 +2140,7 @@ svg {
   line-height: 22px;
   text-align: left;
   position: relative;
+  font-weight: bold;
 }
 
 @media (max-width: 767px) {
@@ -2173,6 +2187,7 @@ svg {
   font-size: 14px;
   line-height: 22px;
   padding-right: 30px;
+  font-weight: bold;
 }
 
 @media (max-width: 767px) {
@@ -2198,6 +2213,7 @@ svg {
   width: 980px;
   margin: 0 auto 68px;
   position: relative;
+  font-weight: bold;
 }
 
 @media (max-width: 1023px) {
@@ -2251,7 +2267,7 @@ svg {
   font-size: 40px;
   line-height: 44px;
   margin-bottom: 20px;
-  font-weight: 700;
+  font-weight: bold;
 }
 
 @media (max-width: 1279px) {
@@ -2272,6 +2288,7 @@ svg {
   font-size: 14px;
   line-height: 22px;
   margin-bottom: 50px;
+  font-weight: bold;
 }
 
 @media (max-width: 767px) {
@@ -2315,7 +2332,7 @@ svg {
   font-size: 17px;
   line-height: 22px;
   margin-bottom: 16px;
-  font-weight: 600;
+  font-weight: bold;
   border: none;
 }
 
@@ -2323,7 +2340,7 @@ svg {
   display: inline-block;
   font-size: 14px;
   line-height: 22px;
-  font-weight: normal;
+  font-weight: bold;
   margin-top: 9px;
   width: 100%;
 }
@@ -2369,6 +2386,7 @@ svg {
   margin-bottom: 14px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  font-weight: bold;
   cursor: pointer;
 }
 
@@ -2403,8 +2421,8 @@ svg {
   font-size: 17px;
   line-height: 22px;
   margin: 0;
-  font-weight: normal;
   text-align: center;
+  font-weight: bold;
 }
 
 @media (max-width: 767px) {
@@ -2418,7 +2436,7 @@ svg {
   padding-top: 4px;
   font-size: 12px;
   line-height: 16px;
-  font-weight: normal;
+  font-weight: bold;
   text-align: center;
 }
 
@@ -2505,6 +2523,7 @@ svg {
   margin: 0;
   font-size: 14px;
   line-height: 22px;
+  font-weight: bold;
 }
 
 @media (max-width: 767px) {
@@ -2518,6 +2537,7 @@ svg {
   margin: 6px 0 0;
   font-size: 12px;
   line-height: 16px;
+  font-weight: bold;
 }
 
 @media (max-width: 767px) {

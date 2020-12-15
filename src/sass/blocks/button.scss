@@ -5,10 +5,14 @@
   color: $color-white;
   border-radius: 8px;
   background-color: $color-black-btn;
-  padding: 17px 33px;
+  padding: 17px 10px 15px;
   text-align: center;
   transition: background-color 0.3s;
   box-sizing: border-box;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &:hover {
     background-color: #191E29;

@@ -1,6 +1,6 @@
 .hero {
   display: flex;
-  margin-bottom: 80px;
+  margin-bottom: 175px;
   justify-content: space-between;
 
   @include mobile {
@@ -11,7 +11,7 @@
 
 
   &__slider {
-    width: 50%;
+    width: 48%;
     height: size(516px);
 
     @include laptop {
@@ -83,7 +83,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 92px;
+    padding-left: 130px;
     width: auto;
 
     @include tablet {
@@ -327,7 +327,7 @@
     font-size: 57px;
     line-height: 57px;
     letter-spacing: -2px;
-    margin: 0 0 24px;
+    margin: 0 0 20px;
     font-weight: 700;
 
     @include tablet {
@@ -379,7 +379,9 @@
   &__intro {
     font-size: 17px;
     line-height: 26px;
-    margin-bottom: 20px;
+    margin-bottom: 32px;
+    padding-right: 130px;
+    font-weight: bold;
 
     @include mobile {
       font-size: size(17px);
@@ -390,6 +392,7 @@
 
   &__btn {
     width: 174px;
+    font-weight: 700;
 
     @include mobile {
       width: 100%;
