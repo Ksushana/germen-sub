@@ -1672,6 +1672,12 @@ svg {
   font-weight: bold;
 }
 
+@media (max-width: 1279px) {
+  .hero__intro {
+    padding-right: 0;
+  }
+}
+
 @media (max-width: 767px) {
   .hero__intro {
     font-size: 1rem;
@@ -1961,6 +1967,7 @@ svg {
   line-height: 22px;
   text-align: center;
   width: 584px;
+  font-weight: bold;
 }
 
 @media (max-width: 767px) {
@@ -2035,6 +2042,7 @@ svg {
   margin: 8px auto 32px;
   font-size: 14px;
   line-height: 22px;
+  font-weight: bold;
 }
 
 @media (max-width: 767px) {

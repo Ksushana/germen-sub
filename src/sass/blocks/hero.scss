@@ -383,6 +383,10 @@
     padding-right: 130px;
     font-weight: bold;
 
+    @include tablet {
+      padding-right: 0;
+    }
+
     @include mobile {
       font-size: size(17px);
       line-height: size(26px);

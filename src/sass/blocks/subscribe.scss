@@ -36,6 +36,7 @@
     line-height: 22px;
     text-align: center;
     width: 584px;
+    font-weight: bold;
 
     @include mobile {
       margin: 0 auto size(32px);
@@ -102,6 +103,7 @@
     margin: 8px auto 32px;
     font-size: 14px;
     line-height: 22px;
+    font-weight: bold;
 
     @include mobile {
       margin: size(8px) auto size(32px);
