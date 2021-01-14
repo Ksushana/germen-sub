@@ -2743,3 +2743,122 @@ svg {
     padding-top: 0.76471rem;
   }
 }
+
+.promo-item {
+  position: relative;
+}
+
+.promo-item__add-to-fav {
+  position: absolute;
+  top: 11px;
+  right: 11px;
+  z-index: 10;
+}
+
+.promo-item__add-to-fav-btn {
+  border: none;
+  background-color: transparent;
+  width: 20px;
+  height: 18px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url(./../img/fav.svg);
+  border: none;
+}
+
+.promo-item__add-to-fav-btn.red-heart {
+  background-image: url(./../img/to-fav.svg);
+}
+
+.promo-item__img {
+  padding-top: 115%;
+}
+
+.promo-item__img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.promo-item__add-to-fav {
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.promo-item__add-to-fav:hover {
+  opacity: 0.7;
+}
+
+.favorite {
+  border-top: 1px solid #D6D6D6;
+  padding-top: 28px;
+}
+
+.favorite--empty {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  .favorite--empty {
+    max-width: 376px;
+  }
+}
+
+.favorite__block {
+  margin: auto;
+  text-align: center;
+}
+
+.favorite__title {
+  margin-bottom: 16px;
+}
+
+.favorite__text {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 32px;
+}
+
+.favorite__text--grey {
+  color: #7C8182;
+}
+
+.favorite__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 304px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto 16px;
+}
+
+.favorite__link {
+  border: 1px solid #D6D6D6;
+  border-radius: 8px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.favorite__link:first-child {
+  margin-right: 15px;
+}

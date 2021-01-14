@@ -1,0 +1,115 @@
+extends pug/layout.pug
+
+block variables
+  - let title = 'Избранное';
+
+block content
+  .container-block.content__container
+    .favorite
+      .promo-catalog.promo-catalog--main
+        .promo-catalog__header
+          .head-h2.promo-catalog__title Избранное
+        .promo-catalog__block__wrapper
+          .promo-catalog__block
+            .promo-item
+              .promo-item__add-to-fav
+                button.promo-item__add-to-fav-btn.red-heart
+
+              .promo-item__img
+                a( href="#" class="js-detail" data-id="220" )
+                  img( src="img/bunch-3@2x.jpg" alt="Chàmomile")
+
+              .promo-item__description
+                a.promo-item__title( href="#" class="" data-id="" ) Chàmomile
+                .promo-item__price 2 990
+                  span.rouble
+                a.promo-item__delivery( href="#" style="background-color: #fee6d2; color: #1f2533;")
+                  .promo-item__delivery__text Заказать
+                  .promo-item__delivery__time
+                    .promo-item__delivery__icon
+                      +svg("car" , "22", "15")
+                    .promo-item__delivery__time__text  120 мин.
+          .promo-catalog__block
+            .promo-item
+              .promo-item__add-to-fav
+                button.promo-item__add-to-fav-btn.red-heart
+
+              .promo-item__img
+                a( href="#" class="js-detail" data-id="220" )
+                  img( src="img/bunch-3@2x.jpg" alt="Chàmomile")
+
+              .promo-item__description
+                a.promo-item__title( href="#" class="" data-id="" ) Chàmomile
+                .promo-item__price 2 990
+                  span.rouble
+                a.promo-item__delivery( href="#" style="background-color: #fee6d2; color: #1f2533;")
+                  .promo-item__delivery__text Заказать
+                  .promo-item__delivery__time
+                    .promo-item__delivery__icon
+                      +svg("car" , "22", "15")
+                    .promo-item__delivery__time__text  120 мин.
+          .promo-catalog__block
+            .promo-item
+              .promo-item__add-to-fav
+                button.promo-item__add-to-fav-btn.red-heart
+
+              .promo-item__img
+                a( href="#" class="js-detail" data-id="220" )
+                  img( src="img/bunch-3@2x.jpg" alt="Chàmomile")
+
+              .promo-item__description
+                a.promo-item__title( href="#" class="" data-id="" ) Chàmomile
+                .promo-item__price 2 990
+                  span.rouble
+                a.promo-item__delivery( href="#" style="background-color: #fee6d2; color: #1f2533;")
+                  .promo-item__delivery__text Заказать
+                  .promo-item__delivery__time
+                    .promo-item__delivery__icon
+                      +svg("car" , "22", "15")
+                    .promo-item__delivery__time__text  120 мин.
+          .promo-catalog__block
+            .promo-item
+              .promo-item__add-to-fav
+                button.promo-item__add-to-fav-btn.red-heart
+
+              .promo-item__img
+                a( href="#" class="js-detail" data-id="220" )
+                  img( src="img/bunch-3@2x.jpg" alt="Chàmomile")
+
+              .promo-item__description
+                a.promo-item__title( href="#" class="" data-id="" ) Chàmomile
+                .promo-item__price 2 990
+                  span.rouble
+                a.promo-item__delivery( href="#" style="background-color: #fee6d2; color: #1f2533;")
+                  .promo-item__delivery__text Заказать
+                  .promo-item__delivery__time
+                    .promo-item__delivery__icon
+                      +svg("car" , "22", "15")
+                    .promo-item__delivery__time__text  120 мин.
+          .promo-catalog__block
+            .promo-item
+              .promo-item__add-to-fav
+                button.promo-item__add-to-fav-btn.red-heart
+
+              .promo-item__img
+                a( href="#" class="js-detail" data-id="220" )
+                  img( src="img/bunch-3@2x.jpg" alt="Chàmomile")
+
+              .promo-item__description
+                a.promo-item__title( href="#" class="" data-id="" ) Chàmomile
+                .promo-item__price 2 990
+                  span.rouble
+                a.promo-item__delivery( href="#" style="background-color: #fee6d2; color: #1f2533;")
+                  .promo-item__delivery__text Заказать
+                  .promo-item__delivery__time
+                    .promo-item__delivery__icon
+                      +svg("car" , "22", "15")
+                    .promo-item__delivery__time__text  120 мин.
+    .favorite--empty
+      .favorite__block
+        .favorite__title.head-h2 Избранное
+        .favorite__text Здесь пока пусто. Чтобы добавить букет в избранное, поставьте сердечко букетам из каталога.
+        .favorite__links
+          a.favorite__link( href="https://germen.me/") Перейти в каталог
+          a.favorite__link( href="https://germen.me/") Написать в чат
+        .favorite__text.favorite__text--grey Не можете выбрать? Напишите нам  в удобный мессенджер — поможем.

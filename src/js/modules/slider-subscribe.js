@@ -32,10 +32,11 @@
 })();
 
 (function () {
-  var slider = document.querySelector('.subscribe__mono-container');
-  if (!slider) {
+  var slider1 = document.querySelector('.subscribe__mono-container');
+  if (!slider1) {
     return;
   }
+
 
   var mySwiper = new Swiper('.subscribe__mono-container', {
     loop: true,

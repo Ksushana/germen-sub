@@ -1,0 +1,36 @@
+.promo-item {
+  position: relative;
+  &__add-to-fav {
+    position: absolute;
+    top: 11px;
+    right: 11px;
+    z-index: 10;
+  }
+
+  &__add-to-fav-btn {
+    border: none;
+    background-color: transparent;
+    width: 20px;
+    height: 18px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(./../img/fav.svg);
+    border: none;
+    &.red-heart {
+      background-image: url(./../img/to-fav.svg);
+    }
+  }
+
+  &__img {
+    padding-top: 115%;
+    img {
+      object-fit: cover;
+    }
+  }
+  &__add-to-fav {
+    transition: opacity 0.2s;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}

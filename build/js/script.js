@@ -9284,6 +9284,50 @@ var Tabs = function(options) {
 'use strict';
 
 (function () {
+  var moinsBtn = document.querySelector('#moins');
+  var plusBtn = document.querySelector('#plus');
+  if (!moinsBtn) {
+    return;
+  }
+  var count = 1;
+  var countEl = document.getElementById("count");
+  function plus(){
+      count++;
+      countEl.value = count;
+  }
+  function minus(){
+    if (count > 1) {
+      count--;
+      countEl.value = count;
+    }
+  }
+
+  moinsBtn.addEventListener("click", function () {
+    minus();
+  });
+
+  plusBtn.addEventListener("click", function () {
+    plus();
+  });
+
+})();
+
+'use strict';
+
+(function () {
+  var favBtns = document.querySelectorAll('.promo-item__add-to-fav-btn');
+
+  for (let index = 0; index < favBtns.length; index++) {
+    const favBtn = favBtns[index];
+    favBtn.addEventListener("click", function () {
+      favBtn.classList.toggle("red-heart");
+    });
+  }
+})();
+
+'use strict';
+
+(function () {
   var ESC = 27;
   var button = document.querySelector('.temporary-closed__btn');
   var close = document.querySelector(".temporary-closed__close");
@@ -9325,6 +9369,61 @@ var Tabs = function(options) {
     closeModal();
   });
 
+})();
+'use strict';
+
+(function () {
+  var text = document.querySelector('.product-info__discription-text');
+  var show = document.querySelector('.product-info__discription-show');
+
+  if (!text) {
+    return;
+  }
+
+  show.addEventListener("click", function () {
+    text.classList.add("full-text");
+  });
+})();
+
+(function () {
+  var slider = document.querySelector('.product-slider');
+  if (!slider) {
+    return;
+  }
+
+  var mySwiper = new Swiper('.product-slider', {
+    loop: true,
+    speed: 400,
+    spaceBetween: 5,
+    slidesPerView: "auto",
+    pagination: {
+      el: '.product-slider__pagination',
+      type: 'bullets',
+    },
+    breakpointsInverse: true,
+    breakpoints:{
+      320: {
+        slidesPerView: "auto",
+      },
+      1130: {
+        slidesPerView: "1",
+      }
+    }
+  });
+})();
+
+(function () {
+  var slider = document.querySelector('.product-add-slider');
+  if (!slider) {
+    return;
+  }
+
+  var mySwiper = new Swiper('.product-add-slider', {
+    loop: true,
+    speed: 400,
+    spaceBetween: 16,
+    slidesPerView: "auto",
+  });
 })();
 'use strict';
 
@@ -9486,10 +9585,11 @@ var Tabs = function(options) {
 })();
 
 (function () {
-  var slider = document.querySelector('.subscribe__mono-container');
-  if (!slider) {
+  var slider1 = document.querySelector('.subscribe__mono-container');
+  if (!slider1) {
     return;
   }
+
 
   var mySwiper = new Swiper('.subscribe__mono-container', {
     loop: true,
