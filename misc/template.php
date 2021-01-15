@@ -1,18 +1,13 @@
 <div class="product-info__gallery">
-    <div class="product-slider" data-product-slider="">
-        <? foreach ($arResult["IMAGES"] as $arImage): ?>
-            <div class="product-slider__item">
-                <? /*
-                <div class="type-label">
-                    <svg width="16px" height="13px">
-                        <use xlink:href="'.SITE_TEMPLATE_PATH.'/icons/icons.svg?v=<?=VERSION_SPRITE__ICONS?>#aroma"></use>
-                    </svg>
-                    Ароматная роза
+    <div class="product-slider swiper-container">
+        <div class="swiper-wrapper">
+            <? foreach ($arResult["IMAGES"] as $arImage): ?>
+                <div class="swiper-slide product-slider__item">
+                    <img data-lazy="<?= $arImage["SRC"] ?>" alt="">
                 </div>
-                */ ?>
-                <img data-lazy="<?= $arImage["SRC"] ?>" alt="">
-            </div>
-        <? endforeach; ?>
+            <? endforeach; ?>
+        </div>
+        <div class="swiper-pagination product-slider__pagination"></div>
     </div>
 </div>
 
@@ -32,7 +27,7 @@
                     </div>
                 </div>
             </form>
-            <div class="product-info__text"> </div>
+
         </div>
         <div class="product-info__add">
             <div class="product-info__add-slider swiper-container product-add-slider">
