@@ -10159,7 +10159,7 @@ input, textarea, button {
 .promo-item__img {
     display: block;
     height: 0;
-    padding-top: 100%;
+    padding-top: 112%;
     border-radius: 4px;
     overflow: hidden;
     position: relative;
@@ -13345,6 +13345,27 @@ input, textarea, button {
     background-color: #CECECE;
 }
 
+.product-info__season {
+    position: absolute;
+    content: "";
+    padding: 0 8px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    color: #FFFFFF;
+    background: #FF323D;
+    border-radius: 20px;
+    top: 22px;
+    left: 16px;
+    z-index: 100;
+}
+
+@media screen and (min-width: 1030px) {
+    .product-info__season {
+        top: 16px;
+    }
+}
+
 .product-info__header {
     margin-bottom: 30px;
 }
@@ -13622,6 +13643,13 @@ input, textarea, button {
     right: 16px;
     z-index: 100;
     @include button-reset-style;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(./../img/to-fav-white.svg);
+}
+
+.product-info__favorite-mob.white-heart {
+    background-image: url(./../img/heart-white-full.svg);
 }
 
 .product-info__favorite-desktop {
@@ -13718,7 +13746,7 @@ input, textarea, button {
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   padding: 16px 16px 34px;
   background-color: #fff;
   backdrop-filter: blur(12px);

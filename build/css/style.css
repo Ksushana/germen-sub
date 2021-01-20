@@ -2813,15 +2813,17 @@ svg {
   text-align: center;
 }
 
-.favorite__title {
+.favorite__title.head-h2 {
   margin-bottom: 16px;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 .favorite__text {
-  font-weight: bold;
   font-size: 14px;
   line-height: 22px;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
+  max-width: 376px;
 }
 
 .favorite__text--grey {
@@ -2852,7 +2854,7 @@ svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 14px;
   line-height: 22px;
   -webkit-box-flex: 1;
@@ -12914,7 +12916,7 @@ input, textarea, button {
 .promo-item__img {
   display: block;
   height: 0;
-  padding-top: 100%;
+  padding-top: 112%;
   border-radius: 4px;
   overflow: hidden;
   position: relative;
@@ -16180,6 +16182,27 @@ input, textarea, button {
   background-color: #CECECE;
 }
 
+.product-info__season {
+  position: absolute;
+  content: "";
+  padding: 0 8px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background: #FF323D;
+  border-radius: 20px;
+  top: 22px;
+  left: 16px;
+  z-index: 100;
+}
+
+@media screen and (min-width: 1030px) {
+  .product-info__season {
+    top: 16px;
+  }
+}
+
 .product-info__header {
   margin-bottom: 30px;
 }
@@ -16495,6 +16518,13 @@ input, textarea, button {
   outline: 0;
   font-family: inherit;
   cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(./../img/to-fav-white.svg);
+}
+
+.product-info__favorite-mob.white-heart {
+  background-image: url(./../img/heart-white-full.svg);
 }
 
 .product-info__favorite-desktop {
@@ -16599,7 +16629,7 @@ input, textarea, button {
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   padding: 16px 16px 34px;
   background-color: #fff;
   -webkit-backdrop-filter: blur(12px);

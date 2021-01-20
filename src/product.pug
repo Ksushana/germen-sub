@@ -7,6 +7,7 @@ block content
             +svg("close-modal", "48", "48")
           .product-info.js-body
             .product-info__gallery
+              .product-info__season Сезон
               .product-slider.swiper-container
                 .swiper-wrapper
                   .swiper-slide.product-slider__item
@@ -20,8 +21,7 @@ block content
                 .swiper-button-next.product-slider__next.product-slider__btn
                   +svg("slider-arrow-next", "11", "18")
                 .swiper-pagination.product-slider__pagination
-              button.product-info__favorite-mob.product-info__favorite-mob--is-added(type="button")
-                +svg("to-fav-white", "22", "20")
+              button.product-info__favorite-mob.white-heart(type="button")
             .product-info__content
               .product-info__content-inner
                 .product-info__header
