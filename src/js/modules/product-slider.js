@@ -14,6 +14,10 @@
       type: 'bullets',
     },
     breakpointsInverse: true,
+    navigation: {
+      nextEl: '.product-slider__next',
+      prevEl: '.product-slider__prev',
+    },
     breakpoints:{
       320: {
         slidesPerView: "auto",
@@ -34,7 +38,10 @@
   var mySwiper = new Swiper('.product-add-slider', {
     loop: true,
     speed: 400,
-    spaceBetween: 16,
+    spaceBetween: 8,
     slidesPerView: "auto",
+    navigation: {
+      nextEl: '.product-add-slider__next',
+    },
   });
 })();
