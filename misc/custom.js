@@ -355,6 +355,7 @@ $(document).ready(function () {
 
     changeNumber();
     showDiscription();
+    showFeatures();
     productMainSlider();
     productAddSlider();
 ;  });
