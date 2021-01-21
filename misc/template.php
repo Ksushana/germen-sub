@@ -178,7 +178,7 @@
         <? if (!$arResult["IS_ORDER"]): ?>
             <div class="product-info__action">
                <div class="product-info__ammount" id="input_div"><input id="moins" type="button" value="-"><input id="count" type="number" size="1" value="1" max="99"><input id="plus" type="button" value="+"></div>
-                <a class="button promo-item__delivery product-info__order-button" href="/order/?id=<?= $arResult["ID"] ?>">
+                <a class="button product-info__order-button" href="/order/?id=<?= $arResult["ID"] ?>">
                     <div class="promo-item__delivery__text">Заказать · <span><?= number_format($arResult["PRICES"]["BASE"]["VALUE"], 0, '', ' ') ?></span> ₽</div>
                 </a>
             </div>
