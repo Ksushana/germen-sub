@@ -1,6 +1,5 @@
 'use strict';
-
-function changeNumber() {
+window.changeNumber = () => {
   var moinsBtn = document.querySelector('#moins');
   var plusBtn = document.querySelector('#plus');
   if (!moinsBtn) {

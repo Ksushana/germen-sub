@@ -1,6 +1,6 @@
 'use strict';
 
-function  showDiscription() {
+window.showDiscription = () => {
   var text = document.querySelector('.product-info__discription-text');
   var show = document.querySelector('.product-info__discription-show');
 

@@ -360,11 +360,6 @@ $(document).ready(function () {
 ;  });
 
   $popupProduct.on('hidden.bs.modal', function () {
-//     var $productSlider = $popupProduct.find('[data-product-slider]');
-
-//     if ($productSlider.length > 0) {
-//       $productSlider.slick('unslick');
-//     }
   });
 
   getMap();

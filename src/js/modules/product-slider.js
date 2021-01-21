@@ -1,4 +1,4 @@
-function productMainSlider() {
+window.productMainSlider = () => {
   var slider = document.querySelector('.product-slider');
   if (!slider) {
     return;
@@ -28,8 +28,7 @@ function productMainSlider() {
     }
   });
 };
-
-function productAddSlider() {
+window.productAddSlider = () => {
   var slider = document.querySelector('.product-add-slider');
   if (!slider) {
     return;
