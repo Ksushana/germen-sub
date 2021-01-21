@@ -1,4 +1,4 @@
-(function () {
+function productMainSlider() {
   var slider = document.querySelector('.product-slider');
   if (!slider) {
     return;
@@ -27,9 +27,9 @@
       }
     }
   });
-})();
+};
 
-(function () {
+function productAddSlider() {
   var slider = document.querySelector('.product-add-slider');
   if (!slider) {
     return;
@@ -44,4 +44,4 @@
       nextEl: '.product-add-slider__next',
     },
   });
-})();
+};

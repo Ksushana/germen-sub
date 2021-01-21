@@ -1,6 +1,6 @@
 'use strict';
 
-(function () {
+function changeNumber() {
   var moinsBtn = document.querySelector('#moins');
   var plusBtn = document.querySelector('#plus');
   if (!moinsBtn) {
@@ -27,4 +27,4 @@
     plus();
   });
 
-})();
+};
