@@ -2,11 +2,11 @@
     <div class="product-info__season">Сезон</div>
     <div class="product-slider swiper-container"  aria-label="Close">
         <div class="swiper-wrapper">
-            <? foreach ($arResult["IMAGES"] as $arImage): ?>
+            <?php foreach ($arResult["IMAGES"] as $arImage): ?>
                 <div class="swiper-slide product-slider__item">
-                    <img src="<?= $arImage["SRC"] ?>" alt="">
+                     <img src="<?=$arImage["SRC"]?>" alt="">
                 </div>
-            <? endforeach; ?>
+            <?php endforeach; ?>
         </div>
         <div class="swiper-button-prev product-slider__prev product-slider__btn">
             <svg width="11" height="18" aria-hidden="true">
@@ -52,41 +52,41 @@
         <h2 class="product-info__add-title">Добавить к заказу</h2>
         <div class="product-info__add-slider swiper-container product-add-slider">
             <div class="swiper-wrapper">
-            <div class="swiper-slide product-add-slider__item"><img src="img/sweets.jpg" alt="Конфеты">
+            <div class="swiper-slide product-add-slider__item"><img src="<?=SITE_TEMPLATE_PATH?>/img/sweets.jpg" alt="Конфеты">
                 <div class="product-add-slider__header">
                 <h3 class="product-add-slider__title">Конфеты AOKI</h3>
                 <p class="product-add-slider__info"></p>Наш курьер зайдет за любимым вином или десертом. Стоимость товара оплачивается отдельно по чеку.<button class="product-add-slider__btn product-add-slider__btn--is-chosen"><svg width="20" height="20" aria-hidden="true">
-                    <use xlink:href="img/sprite.svg#round-tick"></use>
+                    <use xlink:href="<?=SITE_TEMPLATE_PATH?>/img/sprites/sprite.svg#round-tick"></use>
                     </svg></button>
                 </div>
             </div>
-            <div class="swiper-slide product-add-slider__item"><img src="img/sweets.jpg" alt="Конфеты">
+            <div class="swiper-slide product-add-slider__item"><img src="<?=SITE_TEMPLATE_PATH?>/img/sweets.jpg" alt="Конфеты">
                 <div class="product-add-slider__header">
                 <h3 class="product-add-slider__title">Конфеты AOKI</h3>
                 <p class="product-add-slider__info"></p>Наш курьер зайдет за любимым вином или десертом. Стоимость товара оплачивается отдельно по чеку.<button class="product-add-slider__btn product-add-slider__btn--is-chosen"><svg width="20" height="20" aria-hidden="true">
-                    <use xlink:href="img/sprite.svg#round-tick"></use>
+                    <use xlink:href="<?=SITE_TEMPLATE_PATH?>/img/sprites/sprite.svg#round-tick"></use>
                     </svg></button>
                 </div>
             </div>
-            <div class="swiper-slide product-add-slider__item"><img src="img/sweets.jpg" alt="Конфеты">
+            <div class="swiper-slide product-add-slider__item"><img src="<?=SITE_TEMPLATE_PATH?>/img/sweets.jpg" alt="Конфеты">
                 <div class="product-add-slider__header">
                 <h3 class="product-add-slider__title">Конфеты AOKI</h3>
                 <p class="product-add-slider__info"></p>Наш курьер зайдет за любимым вином или десертом. Стоимость товара оплачивается отдельно по чеку.<button class="product-add-slider__btn product-add-slider__btn--is-chosen"><svg width="20" height="20" aria-hidden="true">
-                    <use xlink:href="img/sprite.svg#round-tick"></use>
+                    <use xlink:href="<?=SITE_TEMPLATE_PATH?>/img/sprites/sprite.svg#round-tick"></use>
                     </svg></button>
                 </div>
             </div>
-            <div class="swiper-slide product-add-slider__item"><img src="img/sweets.jpg" alt="Конфеты">
+            <div class="swiper-slide product-add-slider__item"><img src="<?=SITE_TEMPLATE_PATH?>/img/sweets.jpg" alt="Конфеты">
                 <div class="product-add-slider__header">
                 <h3 class="product-add-slider__title">Конфеты AOKI</h3>
                 <p class="product-add-slider__info"></p>Наш курьер зайдет за любимым вином или десертом. Стоимость товара оплачивается отдельно по чеку.<button class="product-add-slider__btn product-add-slider__btn--is-chosen"><svg width="20" height="20" aria-hidden="true">
-                    <use xlink:href="img/sprite.svg#round-tick"></use>
+                    <use xlink:href="<?=SITE_TEMPLATE_PATH?>/img/sprites/sprite.svg#round-tick"></use>
                     </svg></button>
                 </div>
             </div>
             </div>
             <div class="swiper-button-next product-add-slider__next"><svg width="11" height="18" aria-hidden="true">
-                <use xlink:href="img/sprite.svg#slider-arrow-next-white"></use>
+                <use xlink:href="<?=SITE_TEMPLATE_PATH?>/img/sprites/sprite.svg#slider-arrow-next-white"></use>
             </svg></div>
         </div>
         </div>
@@ -140,7 +140,7 @@
         <div class="product-info__fixed-footer">
             <div class="product-info__row product-info__row--baseline">
                 <div class="product-info__cell product-info__time"><svg width="28" height="18" aria-hidden="true">
-                    <use xlink:href="img/sprite.svg#delivery-time"></use>
+                    <use xlink:href="<?=SITE_TEMPLATE_PATH?>/img/sprites/sprite.svg#delivery-time"></use>
                     </svg><span><?= $arResult["DELIVERY_TIME"] ?></span>
                 </div>
 
