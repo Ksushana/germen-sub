@@ -17,6 +17,12 @@
             <h2 class="product-info__title">
                 <?= $arResult["NAME"] ?>
             </h2>
+            <div class="product-info__discription">
+                <h3 class="product-info__discription-title">Описание</h3>
+                <div class="product-info__discription-text"><?= $arResult["PREVIEW_TEXT"] ?><div class="product-info__discription-show"></div>
+                </div>
+            </div>
+
             <form>
                 <div class="product-info__color">
                     <div class="product-info__color-inner"><input class="visually-hidden" id="red" type="radio" name="color" value="red" checked><label for="red" style="background-color: #942945; border: 1px solid #942945;"></label><input class="visually-hidden" id="black" type="radio" name="color" value="black"><label for="black" style="background-color: #3A2F3D; border: 1px solid #3A2F3D;"></label><input class="visually-hidden" id="green" type="radio" name="color" value="green"><label for="green" style="background-color: #557464; border: 1px solid #557464;"></label></div>
@@ -73,11 +79,6 @@
         </div>
         </div>
 
-        <div class="product-info__discription">
-            <h3 class="product-info__discription-title">Описание</h3>
-            <div class="product-info__discription-text"><?= $arResult["PREVIEW_TEXT"] ?><div class="product-info__discription-show"></div>
-            </div>
-        </div>
 
         <div class="product-info__features">
             <div class="product-info__feature">
