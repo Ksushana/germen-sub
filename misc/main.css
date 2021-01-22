@@ -13505,13 +13505,23 @@ input, textarea, button {
 }
 
 .product-add-slider__btn {
-    @include button-reset-style;
-    svg {
-        position: absolute;
-        top: 8px;
-        right: 8px;
-        display: none;
-    }
+    padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  background: 0;
+  appearance: none;
+  outline: 0;
+  font-family: inherit;
+  cursor: pointer;
+
+}
+
+.product-add-slider__btn svg {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: none;
 }
 
 .product-add-slider__btn::before {
@@ -13534,11 +13544,8 @@ input, textarea, button {
 
 }
 
-.product-add-slider__btn.product-add-slider__btn--is-chosen {
-    svg {
+.product-add-slider__btn.product-add-slider__btn--is-chosen svg {
         display: block;
-    }
-
 }
 
 .product-add-slider__next {
@@ -13549,8 +13556,9 @@ input, textarea, button {
     fill: #1F2533;
 }
 
-.product-add-slider__next {
-    @media screen and (min-width: 1030px) {
+@media screen and (min-width: 1030px) {
+
+    .product-add-slider__next {
         display: block;
         top: 95px;
         width: 42px;
@@ -13647,7 +13655,15 @@ line-height: 16px;
     bottom: 16px;
     right: 16px;
     z-index: 100;
-    @include button-reset-style;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    background: 0;
+    appearance: none;
+    outline: 0;
+    font-family: inherit;
+    cursor: pointer;
 }
 
 .product-info__favorite-desktop {
