@@ -1,6 +1,6 @@
 <div class="product-info__gallery">
     <div class="product-info__season">Сезон</div>
-    <div class="product-slider swiper-container"  aria-label="Close">
+    <div class="product-slider swiper-container"  aria-label="Close" data-dismiss="modal">
         <div class="swiper-wrapper">
             <?php foreach ($arResult["IMAGES"] as $arImage): ?>
                 <div class="swiper-slide product-slider__item">
@@ -36,9 +36,9 @@
             </div>
 
             <form>
-                <div class="product-info__color">
+                <!-- <div class="product-info__color">
                     <div class="product-info__color-inner"><input class="visually-hidden" id="red" type="radio" name="color" value="red" checked><label for="red" style="background-color: #942945; border: 1px solid #942945;"></label><input class="visually-hidden" id="black" type="radio" name="color" value="black"><label for="black" style="background-color: #3A2F3D; border: 1px solid #3A2F3D;"></label><input class="visually-hidden" id="green" type="radio" name="color" value="green"><label for="green" style="background-color: #557464; border: 1px solid #557464;"></label></div>
-                </div>
+                </div> -->
                 <div class="product-info__cover">
                     <div class="product-info__cover-inner"><input class="visually-hidden" id="craft" type="radio" name="cover" value="craft" checked><label for="craft">Крафт</label><input class="visually-hidden" id="film" type="radio" name="cover" value="film"><label for="film">Пленка</label><input class="visually-hidden" id="nothing" type="radio" name="cover" value="nothing"><label for="nothing">Без упаковки</label>
                     <div class="product-info__chosen"></div>
@@ -180,9 +180,9 @@
                     <a class="button product-info__order-button" href="/order/?id=<?= $arResult["ID"] ?>">
                         <div class="promo-item__delivery__text">Заказать · <span><?= number_format($arResult["PRICES"]["BASE"]["VALUE"], 0, '', ' ') ?></span> ₽</div>
                     </a>
+                    <button class="product-info__favorite-desktop red-heart" type="button"></button>
                 </div>
             <? endif; ?>
-            <button class="product-info__favorite-desktop red-heart" type="button"></button>
         </div>
     </div>
 </div>
