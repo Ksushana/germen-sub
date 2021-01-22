@@ -30,7 +30,6 @@
                 <?= $arResult["NAME"] ?>
             </h2>
             <div class="product-info__discription">
-                <h3 class="product-info__discription-title">Описание</h3>
                 <div class="product-info__discription-text"><?= $arResult["PREVIEW_TEXT"] ?><div class="product-info__discription-show"></div>
                 </div>
             </div>

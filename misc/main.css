@@ -13383,7 +13383,7 @@ input, textarea, button {
 
 .product-info__title {
     margin: 0 0 16px;
-    font-weight: normal;
+    font-weight: 600;
     font-family: "ProximaNova", "Arial", sans-serif;
     font-size: 24px;
     line-height: 32px;
@@ -13655,6 +13655,7 @@ line-height: 16px;
 
 .product-info__discription-text {
   max-height: 88px;
+  min-height: 48px;
   overflow: hidden;
   position: relative;
   transition: max-height 0.3s;
