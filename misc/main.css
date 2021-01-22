@@ -14817,7 +14817,7 @@ line-height: 16px;
 @media screen and (min-width: 1030px) {
     .product-modal .modal-dialog {
         width: 98%;
-        max-width: 1130px;
+        max-width: 1050px;
     }
 
     .product-modal .modal-close {
