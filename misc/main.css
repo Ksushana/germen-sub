@@ -13485,7 +13485,6 @@ input, textarea, button {
   .product-add-slider,
   .product-add-slider.swiper-container {
     overflow: hidden;
-    height: 210px;
     padding: 5px 2px 30px;
   }
 
