@@ -1,5 +1,5 @@
 <div class="product-info__gallery">
-    <div class="product-slider swiper-container">
+    <div class="product-slider swiper-container"  aria-label="Close">
         <div class="swiper-wrapper">
             <? foreach ($arResult["IMAGES"] as $arImage): ?>
                 <div class="swiper-slide product-slider__item">
