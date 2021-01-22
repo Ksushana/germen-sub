@@ -170,6 +170,7 @@
                     </a>
                 </div>
             <? endif; ?>
+            <button class="product-info__favorite-desktop red-heart" type="button"></button>
         </div>
     </div>
 </div>
