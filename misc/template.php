@@ -1,4 +1,5 @@
 <div class="product-info__gallery">
+    <div class="product-info__season">Сезон</div>
     <div class="product-slider swiper-container"  aria-label="Close">
         <div class="swiper-wrapper">
             <? foreach ($arResult["IMAGES"] as $arImage): ?>
@@ -7,8 +8,19 @@
                 </div>
             <? endforeach; ?>
         </div>
+        <div class="swiper-button-prev product-slider__prev product-slider__btn">
+            <svg width="11" height="18" aria-hidden="true">
+                <use xlink:href="<?=SITE_TEMPLATE_PATH?>/img/sprites/sprite.svg#slider-arrow-prev"></use>
+            </svg>
+        </div>
+        <div class="swiper-button-next product-slider__next product-slider__btn">
+            <svg width="11" height="18" aria-hidden="true">
+                <use xlink:href="<?=SITE_TEMPLATE_PATH?>/img/sprites/sprite.svg#slider-arrow-next"></use>
+            </svg>
+        </div>
         <div class="swiper-pagination product-slider__pagination"></div>
     </div>
+    <button class="product-info__favorite-mob white-heart" type="button">
 </div>
 
 <div class="product-info__content">
