@@ -2864,3 +2864,59 @@ svg {
 .favorite__link:first-child {
   margin-right: 15px;
 }
+
+.basket-bar {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  padding: 16px 16px 32px;
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  .basket-bar {
+    display: block;
+  }
+}
+
+.basket-bar__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 17px;
+  height: 56px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 8px;
+  letter-spacing: 0.35px;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.basket-bar__title {
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.35px;
+}
+
+.basket-bar__price {
+  text-align: right;
+}
+
+.basket-bar__delivery__time {
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.basket-bar__delivery__icon {
+  margin-right: 9px;
+}
