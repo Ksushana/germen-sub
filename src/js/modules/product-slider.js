@@ -39,8 +39,5 @@ window.productAddSlider = () => {
     speed: 400,
     spaceBetween: 8,
     slidesPerView: "auto",
-    navigation: {
-      nextEl: '.product-add-slider__next',
-    },
   });
 };
