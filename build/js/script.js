@@ -9644,3 +9644,16 @@ window.productAddSlider = () => {
   });
 
 })();
+
+(function () {
+  var care = document.querySelector('.care__tabs');
+  if (!care) {
+    return;
+  }
+
+  var tabs = new Tabs({
+    elem: "care-tabs",
+    open: 0
+  });
+
+})();

@@ -1,0 +1,106 @@
+extends pug/layout.pug
+
+block variables
+  - let title = 'Уход';
+
+block content
+  .content.content--main.content--yellow
+    .care
+      .care__inner
+        h1.care__title Вам приехали красивые цветы
+        .care__note Чтобы цветы дольше простояли, ознакомьтесь с рекомендациями по уходу.
+        .care__tabs.js-tabs( id="care-tabs")
+          .care__tabs-header.js-tabs__header
+            li.care__tabs-item
+              a.care__tabs-link.js-tabs__title(href="") Уход&nbsp;за&nbsp;букетом
+            li.care__tabs-item
+              a.care__tabs-link.js-tabs__title(href="") за&nbsp;подпиской
+            li.care__tabs-item
+              a.care__tabs-link.js-tabs__title(href="") за&nbsp;набором
+          .care__tabs-content.js-tabs__content
+            .care__list
+              .care__list-item
+                .care__list-title
+                  +svg("care-1", "24", "22")
+                  | Освободите цветы от транспортной упаковки
+                .care__image
+                  img( src="img/care-1@1x.jpg" srcset="img/care-1@1x.jpg 1x, img/care-1@2x.jpg 2x")
+              .care__list-item
+                .care__list-title
+                  +svg("care-2", "24", "22")
+                  | По желанию, разрежьте бичевку — чтобы цветы свободно стояли в вазе
+                .care__image
+                  img( src="img/care-2@1x.jpg" srcset="img/care-2@1x.jpg 1x, img/care-2@2x.jpg 2x")
+              .care__list-item
+                .care__list-title
+                  +svg("care-3", "24", "22")
+                  | Наполните вазу прохладной водой и подрежьте под ее рост цветы
+                .care__image
+                  img( src="img/care-3@1x.jpg" srcset="img/care-3@1x.jpg 1x, img/care-3@2x.jpg 2x")
+              .care__list-item
+                .care__list-title
+                  +svg("care-4", "24", "22")
+                  | Повторяйте последний пункт раз в     2–3 дня и храните цветы в комфортном месте: там не должно быть душно или сквозняк
+                .care__image
+                  img( src="img/care-4@1x.jpg" srcset="img/care-4@1x.jpg 1x, img/care-4@2x.jpg 2x")
+          .care__tabs-content.js-tabs__content
+            span 2
+            .care__list
+              .care__list-item
+                .care__list-title
+                  +svg("care-1", "24", "22")
+                  | Освободите цветы от транспортной упаковки
+                .care__image
+                  img( src="img/care-1@1x.jpg" srcset="img/care-1@1x.jpg 1x, img/care-1@2x.jpg 2x")
+              .care__list-item
+                .care__list-title
+                  +svg("care-2", "24", "22")
+                  | По желанию, разрежьте бичевку — чтобы цветы свободно стояли в вазе
+                .care__image
+                  img( src="img/care-2@1x.jpg" srcset="img/care-2@1x.jpg 1x, img/care-2@2x.jpg 2x")
+              .care__list-item
+                .care__list-title
+                  +svg("care-3", "24", "22")
+                  | Наполните вазу прохладной водой и подрежьте под ее рост цветы
+                .care__image
+                  img( src="img/care-3@1x.jpg" srcset="img/care-3@1x.jpg 1x, img/care-3@2x.jpg 2x")
+              .care__list-item
+                .care__list-title
+                  +svg("care-4", "24", "22")
+                  | Повторяйте последний пункт раз в     2–3 дня и храните цветы в комфортном месте: там не должно быть душно или сквозняк
+                .care__image
+                  img( src="img/care-4@1x.jpg" srcset="img/care-4@1x.jpg 1x, img/care-4@2x.jpg 2x")
+          .care__tabs-content.js-tabs__content
+            span 3
+            .care__list
+              .care__list-item
+                .care__list-title
+                  +svg("care-1", "24", "22")
+                  | Освободите цветы от транспортной упаковки
+                .care__image
+                  img( src="img/care-1@1x.jpg" srcset="img/care-1@1x.jpg 1x, img/care-1@2x.jpg 2x")
+              .care__list-item
+                .care__list-title
+                  +svg("care-2", "24", "22")
+                  | По желанию, разрежьте бичевку — чтобы цветы свободно стояли в вазе
+                .care__image
+                  img( src="img/care-2@1x.jpg" srcset="img/care-2@1x.jpg 1x, img/care-2@2x.jpg 2x")
+              .care__list-item
+                .care__list-title
+                  +svg("care-3", "24", "22")
+                  | Наполните вазу прохладной водой и подрежьте под ее рост цветы
+                .care__image
+                  img( src="img/care-3@1x.jpg" srcset="img/care-3@1x.jpg 1x, img/care-3@2x.jpg 2x")
+              .care__list-item
+                .care__list-title
+                  +svg("care-4", "24", "22")
+                  | Повторяйте последний пункт раз в     2–3 дня и храните цветы в комфортном месте: там не должно быть душно или сквозняк
+                .care__image
+                  img( src="img/care-4@1x.jpg" srcset="img/care-4@1x.jpg 1x, img/care-4@2x.jpg 2x")
+    .first-order
+      h2.first-order__title Хотите заказать цветы? <br>У нас есть скидка на первый заказ
+      .first-order__links
+        a.first-order__link( href="#" ) Перейти в каталог
+        a.first-order__link( href="#" ) Написать в чат
+      a.first-order__messangers( href="#" ) Не можете выбрать? Напишите нам  в удобный мессенджер — поможем.
+
